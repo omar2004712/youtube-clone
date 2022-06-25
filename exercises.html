@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    .google-search{
+      margin-bottom: 100px;
+    }
+    .google-logo{
+    width: 250px;
+    display: block;
+    margin: 10px 0px 20px 155px 
+    }
+    .google-search-box{
+      padding: 10px 15px 10px 15px;
+      font-size: 16px;
+      width: 561px;
+      border: none;
+      border-radius: 18px;
+      outline: none;
+      overflow: hidden;
+      background-color: rgb(241, 241, 241);
+      transition: box-shadow 100ms;
+    }
+    .google-search-box:focus{
+      box-shadow: 0px 0px 5px rgb(114, 114, 114);
+    }
+    .linkedin-signup{
+      font-family: Roboto;
+      margin: 0px 0px 100px 0px;
+    }
+    .email-label{
+      display: block;
+      font-weight: bold;
+      font-size: 13px;
+      color: rgb(58, 58, 58);
+      margin-bottom: 15px;
+    }
+    .email-input{
+      font-size: 18px;
+      padding: 4px;
+      width: 300px;
+      border: none;
+      border-radius: 2px;
+      outline: black solid 2px;
+      margin-bottom: 2px;
+    }
+    .description{
+      font-size: 13px;
+      font-weight: bold;
+      color:rgb(102, 102, 102)
+    }
+    .agree-join-button{
+      background-color: royalblue;
+      color: white;
+      border: none;
+      width: 306px;
+      height: 40px;
+      border-radius: 20px;
+    }
+    .agree-join-button:hover{
+      background-color: rgb(53, 85, 182);
+    }
+    .new-tweet{
+      margin-bottom: 100px;
+    }
+    .tweet-button{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    padding: 7px 12px 7px 12px;
+    letter-spacing: 0.6px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+    transition: all 100ms;
+  }
+  .tweet-button:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  }
+  .tweet-button:active{
+    background-color: rgb(0, 103, 187);
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+  .common{
+    vertical-align: middle;
+  }
+  .profile-photo{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 17.5px;
+  }
+  .tweet-content{
+    border: none;
+    width: 120px;
+    min-height: 15px;
+    border-radius: 12.5px;
+    padding: 5px;
+    outline: none;
+  }
+  .signup-form{
+    margin-bottom: 100px;
+  }
+  .first-name,
+  .last-name,
+  .email,
+  .password{
+    font-size: 18px;
+    color: gray;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: 2px rgb(216, 216, 216) solid;
+    border-radius: 8px;
+  }
+  .first-name,
+  .last-name{
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .first-name::placeholder, 
+  .last-name::placeholder,
+  .email::placeholder,
+  .password::placeholder{
+    color: rgb(199, 199, 199);
+  }
+  .email,
+  .password{
+    display: block;
+    width: 267px;
+    margin-bottom: 10px;
+  }
+  .signup-button{
+    width: 291px;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+  }
+  .signup-button:hover{
+    background-color: rgb(50, 84, 184);
+  }
+  .signup-form .title{
+    font-family: Arial;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div class="google-search">
+    <img 
+      src="./images/download.png" 
+      class="google-logo"
+    />
+    <input class="google-search-box" type="text" placeholder="Search Google or type URL">
+  </div>
+  <div class="linkedin-signup">
+    <label class="email-label">
+      Email
+    </label>
+    <input type="text" class="email-input" />
+    <p class="description">
+      By clicking Agree & Join you agree to the Privacy Policy.
+    </p>
+    <button class="agree-join-button">
+      Agree & Join
+    </button>
+  </div>
+  <div class="new-tweet">
+    <img src="thumbnails/thumbnail-1.webp" class="profile-photo common">
+    <input type="text" placeholder="What's happening?" class="tweet-content common" />
+    <button class="tweet-button common">
+      Tweet
+    </button>
+  </div>
+  <div class="signup-form">
+    <form>
+      <h1 class="title">Sign Up</h1>
+      <input 
+        class="first-name" 
+        placeholder="First name" 
+      />
+      <input 
+        class="last-name"  
+        placeholder="Last name" 
+      />
+      <input class="email" placeholder="Email" />
+      <input type="password" class="password" placeholder="Password" />
+      <input type="password" class="password" placeholder="Confirm Password" />
+      <button class="signup-button">
+        Sign Up
+      </button>
+    </form>
+  </div>
+</body>
+</html>
